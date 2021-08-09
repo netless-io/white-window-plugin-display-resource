@@ -1,0 +1,53 @@
+.preview-list {
+    display: inline-block;
+    position: absolute;
+    left: -230px;
+    height: 100%;
+    width: 230px;
+    transition: 0.3s;
+    overflow: scroll;
+    cursor: pointer;
+    background-color: rgb(23 23 23 / 65%);
+    z-index: 2;
+    user-select: none;
+
+    &.show {
+        left: 0;
+    }
+
+    &.disable {
+        cursor: not-allowed;
+    }
+
+    .item {
+        display: flex;
+        justify-content: space-around;
+
+        & > :first-child, :last-child {
+            flex: 1
+        }
+
+        & > span {
+            display: inline-block;
+            text-align: center;
+            padding-top: 10px;
+            color: #e0e0e0;
+        }
+
+        & > div {
+            flex: 3;
+
+            img {
+                height: 85px;
+                border: 10px solid rgb(0 0 0 / 0%);
+                width: 100%;
+            }
+        }
+
+        &.active {
+            & > div > img {
+                border: 10px solid rgb(183 183 183 / 50%);
+            }
+        }
+    }
+}

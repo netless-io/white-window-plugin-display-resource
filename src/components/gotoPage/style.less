@@ -1,0 +1,29 @@
+.page {
+    text-align: end;
+
+    input.goto {
+        width: 30px;
+        height: 20px;
+        border: 1px solid #a0a0a0;
+        border-radius: 3px;
+        text-align: center;
+
+        &:focus {
+            outline: none;
+            border: 1px solid #83a3ea;
+            box-shadow: 0 0 2px #83a3ea;
+        }
+
+        &.disable {
+            cursor: not-allowed;
+        }
+    }
+
+    .count {
+        &::before {
+            content: "/";
+            margin: 0 10px;
+            color: #a0a0a0;
+        }
+    }
+}
