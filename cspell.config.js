@@ -1,0 +1,26 @@
+module.exports = {
+    version: "0.1",
+    language: "en",
+    words: ["cspell", "commitlint", "displayer", "minwidth"],
+    flagWords: ["fuck", "bitch", "asshole", "bullshit", "crap", "suck", "wtf"],
+    dictionaries: [
+        "softwareTerms",
+        "typescript",
+        "node",
+        "html",
+        "css",
+        "bash",
+        "fonts",
+        "filetypes",
+        "npm",
+        "en_US",
+    ],
+    ignorePaths: [
+        "**/coverage/**",
+        "**/node_modules/**",
+        "**/dist/**",
+        "cspell.config.js",
+        "yarn.lock",
+        "CHANGELOG.md",
+    ],
+};
